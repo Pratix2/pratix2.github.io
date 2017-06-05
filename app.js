@@ -7,7 +7,7 @@ app.use(express.static(__dirname + "/public"))
 
 app.get('/', (req, res) => {
   res.render('index', { title: 'My Website', message: 'Hello there!'})
-})
+});
   
 app.get('/about-us', (req, res) => {
   res.render('about', {title: 'About Us'})
