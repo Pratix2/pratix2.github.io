@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 app.get('/about-us', (req, res) => {
   res.render('about', {title: 'About Us'})
 })
-
+  
 app.get('/contact-us', (req, res) => {
   res.render('contact', {title: 'Contact Us'})
 })
