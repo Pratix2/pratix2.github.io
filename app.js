@@ -21,14 +21,11 @@ app.get('/other', (req, res) => {
   res.render('other', {title: "Other"})
 })
 
-app.get(`/orders`, (req, res) => {
-  const orderData = [
-    { id: 1, total: 50.32 },
-    { id: 2, total: 6902.23 },  
-    { id: 3, total: 987 },
-  ]
+app.get(`/Exchange-rate`, (req, res) => {
+  res.render('exchange-rate', {title: 'Exchange Rate'})
+  const folder = require('./desktop/Yelp API/api')
 })
 
 app.listen(3000, () => {
   console.log('Example app listening on port 3000!')
-})
+}) 

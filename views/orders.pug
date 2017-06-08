@@ -1,8 +1,0 @@
-extends _layout
-
-block content
-    - let total = 0
-    each order in orderData
-        - total += order.total
-        div= `$${order.total}`
-    div= `$${total.toFixed(2)}`
