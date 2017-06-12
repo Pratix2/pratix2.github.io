@@ -2,4 +2,11 @@ extends _layout
 
 block content
     h4 Rates
-    - console.log('yo')
+    ul
+        each rate, currencyCode in rates
+            li
+                strong= `${currencyCode}: `
+                span= rate
+
+block page-scripts
+    script(defer src="/script.js")
